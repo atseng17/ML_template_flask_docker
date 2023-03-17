@@ -3,7 +3,7 @@ version:  "3.1"
 services:
   mlapp:
     container_name: mlapp
-    image: someone_random_guy/mlapp
+    image: someone_random_guy/some_random_app
     ports:
       - "5000:5000"
     build:
