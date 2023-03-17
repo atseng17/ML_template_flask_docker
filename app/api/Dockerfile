@@ -10,4 +10,7 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+# if using flask
+# CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
+# if using gunicorn
+CMD ["gunicorn", "--bind=0.0.0.0:5000", "--reload", "--workers=3", "--threads=8", "--timeout=0", "app:app"]
