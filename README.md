@@ -31,7 +31,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"text": "May the Force be 
 Build container and run image
 ```
 cd app/api/
-docker compose up --build
+docker-compose up --build
 ```
 Optional storing and pulling image from docker hub
 ```
